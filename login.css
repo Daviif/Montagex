@@ -39,6 +39,10 @@ body{
     padding: 0 40px;
 }
 
+.form-box.Forgot{
+    right: 0;
+    padding: 0 60px;
+}
 .form-box h2{
     font-size: 32px;
     text-align: center;
@@ -163,6 +167,13 @@ body{
     padding: 0px 40px 60px 150px;
 }
 
+.info-content.Forgot{
+    right: 0;
+    text-align: right;
+    padding: 0px 40px 60px 150px;
+    display: none;
+}
+
 .info-content h2{
     text-transform: uppercase;
     font-size: 36px;
@@ -182,4 +193,27 @@ body{
     background: linear-gradient(45deg, #25252b, #0000FF);
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
+    transition: 1.5s ease;
+}
+
+.container.active .curved-shape{
+    transform: rotate(0deg) skewY(0deg);
+}
+
+.container .curved-shape2{
+    position: absolute;
+    left: 250px;
+    top: 100%;
+    height: 700px;
+    width: 850px;
+    background:#25252b;
+    border-top: 3px solid #0000FF;
+    transform: rotate(0deg) skewY(0deg);
+    transform-origin: bottom left;
+    transition: 1.5s ease;
+}
+
+.container.active .curved-shape2{
+    transform: rotate(-11deg) skewY(-41deg);
+    transition-delay: 1.2s;
 }
